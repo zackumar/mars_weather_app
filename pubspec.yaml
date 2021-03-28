@@ -45,9 +45,19 @@ dependencies:
   url_launcher: ^6.0.3 #my plugs :D
   fluttertoast: ^8.0.3 #TOAST!!!!
 
+  flutter_launcher_icons: ^0.9.0
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
+
+flutter_icons:
+  ios: true
+  android: true
+  image_path_ios: "assets/launcher/icon.png"
+  image_path_android: "assets/launcher/icon.png"
+  adaptive_icon_background: "assets/launcher/background.png"
+  adaptive_icon_foreground: "assets/launcher/foreground.png"
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -72,6 +82,8 @@ flutter:
     - Clear.png
     - Cloudy.png
     - Sunny.png
+
+    - appicon.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

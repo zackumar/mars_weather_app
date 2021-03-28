@@ -69,6 +69,14 @@ class HomeView extends StatelessWidget {
                                 decoration: BoxDecoration(
                                   color: Color(0xFF353360),
                                   borderRadius: BorderRadius.circular(100.w),
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Color(0xFF000000).withOpacity(0.5),
+                                      spreadRadius: 4,
+                                      blurRadius: 7,
+                                      offset: Offset(0, 5),
+                                    )
+                                  ],
                                 ),
                                 child: Padding(
                                   padding: EdgeInsets.only(
@@ -77,7 +85,7 @@ class HomeView extends StatelessWidget {
                                       top: 4.h,
                                       bottom: 4.h),
                                   child: Text(
-                                    model.uvIndex,
+                                    model.atmOpacity,
                                     style: TextStyle(
                                       fontFamily: 'Montserrat',
                                       fontSize: 18.sp,
@@ -142,6 +150,15 @@ class HomeView extends StatelessWidget {
                                           color: Color(0xFF162C38),
                                           borderRadius:
                                               BorderRadius.circular(16.0.w),
+                                          boxShadow: [
+                                            BoxShadow(
+                                              color: Color(0xFF000000)
+                                                  .withOpacity(0.5),
+                                              spreadRadius: 4,
+                                              blurRadius: 7,
+                                              offset: Offset(0, 5),
+                                            )
+                                          ],
                                         ),
                                         child: Padding(
                                           padding: EdgeInsets.only(
@@ -197,6 +214,15 @@ class HomeView extends StatelessWidget {
                                             color: Color(0xFF162C38),
                                             borderRadius:
                                                 BorderRadius.circular(16.0.w),
+                                            boxShadow: [
+                                              BoxShadow(
+                                                color: Color(0xFF000000)
+                                                    .withOpacity(0.5),
+                                                spreadRadius: 4,
+                                                blurRadius: 7,
+                                                offset: Offset(0, 5),
+                                              )
+                                            ],
                                           ),
                                           child: Center(
                                             child: Text(
